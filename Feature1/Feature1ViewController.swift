@@ -1,8 +1,8 @@
 //
 //  Feature1ViewController.swift
-//  interfaceModulePoc1
+//  Feature1
 //
-//  Created by Fernando Luiz Goulart on 31/05/22.
+//  Created by Fernando Luiz Goulart on 01/06/22.
 //
 
 import UIKit
@@ -53,7 +53,7 @@ public final class Feature1ViewController: UIViewController {
 extension Feature1ViewController {
     @objc
     func navigateToFeature2() {
-        let feature2Route = Feature2Route(someAnalyticsContext: "navigation from feature1")
+        let feature2Route = Feature2Interface.Feature2Route(someAnalyticsContext: "blablabla")
         routerService.navigate(
             toRoute: feature2Route,
             fromView: self,
@@ -62,3 +62,4 @@ extension Feature1ViewController {
         )
     }
 }
+

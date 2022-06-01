@@ -1,20 +1,20 @@
 //
 //  Feature1Feature.swift
-//  interfaceModulePoc1
+//  Feature1
 //
-//  Created by Fernando Luiz Goulart on 31/05/22.
+//  Created by Fernando Luiz Goulart on 01/06/22.
 //
 
 import RouterServiceInterface
 import UIKit
 
-struct Feature1Feature: Feature {
+public struct Feature1Feature: Feature {
 
     @Dependency var routerService: RouterServiceProtocol
 
     public init() {}
 
-    func build(fromRoute route: Route?) -> UIViewController {
+    public func build(fromRoute route: Route?) -> UIViewController {
         return Feature1ViewController(routerService: routerService)
     }
 }
