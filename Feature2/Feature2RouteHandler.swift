@@ -6,6 +6,7 @@
 //
 
 import RouterServiceInterface
+import Feature2Interface
 import UIKit
 
 public final class Feature2RouteHandler: RouteHandler {
@@ -19,4 +20,6 @@ public final class Feature2RouteHandler: RouteHandler {
         }
         return Feature2Feature.self
     }
+
+    public init() { }
 }

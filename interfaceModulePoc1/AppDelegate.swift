@@ -7,6 +7,8 @@
 
 import UIKit
 import RouterService
+import Feature1
+import Feature2
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

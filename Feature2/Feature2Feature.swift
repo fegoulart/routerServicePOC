@@ -7,10 +7,13 @@
 
 import RouterServiceInterface
 import UIKit
+import Feature2Interface
 
 struct Feature2Feature: Feature {
 
     @Dependency var routerService: RouterServiceProtocol
+
+    public init() {}
 
     func build(fromRoute route: Route?) -> UIViewController {
         return Feature2ViewController(routerService: routerService)
